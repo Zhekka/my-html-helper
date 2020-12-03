@@ -1,0 +1,45 @@
+/*Don`t look at this CSS... */
+
+body {
+    background: gainsboro;
+}
+
+.image {
+    width: 400px;
+}
+
+table * {
+    border: 1px solid black;
+}
+
+a {
+    margin: 10px;
+    text-decoration: none;
+    color: red;
+}
+
+footer {
+    margin: 50px;
+    text-align: center;
+    background: gold;
+    font-size: 40px;
+}
+
+header {
+    background: gold;
+}
+
+header a {
+    font-size: 30px;
+}
+
+#btn_down {
+    font-size: 15px;
+    float: right;
+    color: blue;
+}
+#btn_up{
+    font-size: 20px;
+    float: right;
+    color: blue;
+}

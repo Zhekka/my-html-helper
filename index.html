@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Кодіровка web сторінки -->
+    <meta charset="UTF-8">
+
+    <!--How to add favicon -->
+    <link rel="shortcut icon" href="img/index.ico" type="image/x-icon">
+
+    <!-- SEO name-назва котента content що описує сам контент -->
+    <meta name="keywords" content="html, web, test">
+
+    <!-- For mobile version, додається при додаванні мобільної версії сайту,
+    user-scalable=no - забороняє збільшення сайту -->
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    <!-- Using for latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For external styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- For local styles -->
+    <style>
+
+    </style>
+
+    <!-- Name of website - title -->
+    <title>HTML-Tutorial</title>
+
+</head>
+<body>
+<header id="up">
+    <a href="#basic">Basic |</a>
+    <a href="#lists">Lists |</a>
+    <a href="#images">Images |</a>
+    <a href="#links_buttons">Links and Buttons |</a>
+    <a href="#tables">Tables |</a>
+    <a href="#int_tag">IntTags |</a>
+    <a href="./pageStruct.html" target="_blank">Struct of page |</a>
+    <a href="#forms">Forms |</a>
+
+
+    <a id="btn_down" href="#down">Down</a>
+</header>
+<h1 align="center" id="basic">Topic: Basic(Text styles, paragraph, h-tags)</h1>
+
+<!-- Heading tags -->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<!-- Horizontal line -->
+<hr>
+
+<!-- Paragraph -->
+<p>This is my paragraph...</p>
+
+<!-- Information about author -->
+<address>P.S. Eugene Kirnasuk</address>
+<hr>
+
+<!-- Quote and author цитата і автор -->
+<q>Make America great again</q>
+<address>Tramp</address>
+<hr>
+
+<!-- Block of Quote -->
+<blockquote><p> say can you see, by the dawn's early light
+    What so proudly we hailed at the twilight's last gleaming?
+    Whose broad stripes and bright stars through the perilous fight
+    O'er the ramparts we watched, were so gallantly streaming?
+    And the rocket's red glare, the bombs bursting in air
+    Gave proof through the night that our flag was still there
+    O say does that star-spangled banner yet wave
+    O'er the land of the free and the home of the brave?</p></blockquote>
+<hr>
+
+<!-- Date and Time -->
+<time>12-02-2001</time>
+<!-- From new line br tag -->
+<br>
+<time datetime="12-02-2001">My birthday</time>
+<hr>
+
+<!-- Text styles -->
+<b>Bold text</b>
+<br>
+<i>Italic text</i>
+<br>
+<tt>Typing Text</tt>
+<br>
+<s>Deleted text</s>
+<hr>
+
+<!-- Code example text -->
+<code>const object = {name:"Eugene", age: 19}</code>
+<hr>
+<!-- Text without formatting -->
+<pre>const object = {
+    name:"Eugene",
+    age: 19
+    };
+</pre>
+<hr>
+
+<!-- Text styles with semantic accent -->
+<strong>Bold accent text</strong>
+<br>
+<em>Italic accent text</em>
+<br>
+<small>Small text</small>
+<br>
+<big>Big text</big>
+<br>
+<del>Deleted</del>
+<br>
+<ins>Inserted</ins>
+<br>
+
+<!-- Subscripted text -->
+<h2>
+    H
+    <sub>2(Subscripted text)</sub>
+    O
+</h2>
+
+<!-- Superscripted text -->
+<h2>
+    X
+    <sup>2(Superscripted text)</sup>
+    = 9
+</h2>
+<hr>
+
+<!-- Block element -->
+<div>Block element</div>
+
+<!-- Inline element -->
+<span>Inline element</span>
+
+<!-- Example of semantic tags, семантіка - тег який носить смислову назву, базовий розподіл web сторінки-->
+<header>Header</header>
+<nav>Navigation</nav>
+<article>Article</article>
+<footer>Footer</footer>
+
+<!-- Умовні коментарі -->
+<!---[if IE]>
+<p>This text you can see only in Internet Explorer</p>
+<![endif]-->
+
+<hr>
+<h1 id="lists" align="center">Topic: Lists(Ordered, Unordered, Definitions lists)</h1>
+
+<!-- Unordered list -->
+<ul>Unordered list
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack developer</li>
+</ul>
+<hr>
+
+<!-- Ordered list -->
+<ol>Ordered list
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack developer</li>
+</ol>
+<hr>
+
+<!-- Ordered list with reversed start  -->
+<ol start="6" reversed>Ordered list with reversed start
+    <li>Front-end Developer</li>
+    <li>Back-end Developer</li>
+    <li>Full-stack developer</li>
+</ol>
+<hr>
+
+<!-- Ordered list with ordered list in it -->
+<ol start="6" reversed>Ordered list with ordered list in it
+    <li>Front-end Developer
+        <ol>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>CSS</li>
+        </ol></li>
+    <li>Back-end Developer</li>
+    <li>Full-stack developer</li>
+</ol>
+<hr>
+
+<!-- Ordered list with unordered list in it -->
+<ol start="6" reversed>Ordered list with unordered list in it
+    <li>Front-end Developer
+        <ul>
+            <li>HTML</li>
+            <li>JS</li>
+            <li>CSS</li>
+        </ul></li>
+    <li>Back-end Developer</li>
+    <li>Full-stack developer</li>
+</ol>
+<hr>
+
+<!-- Definitions List -->
+<dl>
+    <dt>Front-end Developer</dt><!-- Термін -->
+    <dd>It`s person who works with the visible part of website</dd><!-- Визначення терміна -->
+    <dt>Back-end Developer</dt>
+    <dd>It`s a person who works with the hidden part of a website, including databases and environments</dd>
+
+</dl>
+
+<hr>
+<h1 id="images" align="center">Topic: Images(img, picture, source, figure, figcaption tags)</h1>
+
+<!-- Simple image, alt when img is not found -->
+<img class="image" src="img/image.jpg" alt="Error">
+<hr>
+
+<!-- Responsive image -->
+<picture>
+    <source media="(min-width: 1024px) " srcset="img/big-car.jpg">
+    <source media="(min-width: 768px)" srcset="img/medium-car.jpeg">
+    <source media="(min-width: 360px)" srcset="img/small-car.jpg">
+    <img src="img/main-car.png" alt="Here must be a car :(">
+
+</picture>
+<hr>
+
+<!-- Image with semantic description -->
+<figure>
+    <img src="img/medium-car.jpeg" alt="Camry is broken">
+    <figcaption>Toyota Camry 3.5</figcaption>
+</figure>
+
+<hr>
+
+<h1 id="tables" align="center">Topic: Tables</h1>
+
+<table>
+    <caption>List of cars</caption>
+    <tr>
+        <td>Toyota camry 3.5</td>
+        <td>BMW 328</td>
+        <td>Vw passat 2.0</td>
+    </tr>
+    <tr>
+        <td>hi</td>
+        <td>hi</td>
+        <td>hi</td>
+    </tr>
+</table>
+<hr>
+<table>
+    <caption>Cars</caption><!-- Name of table -->
+    <tr><!-- Create new table-line -->
+        <th>Name of car</th><!-- Name of colum -->
+        <th>Review</th>
+    </tr>
+    <tr>
+        <td>Toyota Camry 3.5</td><!-- Table data colspan="2" об'єднуя ячейки по горизонталь а rowspan по вертикалі  -->
+        <td>Very good</td>
+    </tr>
+    <tr>
+        <td>BMW 328</td>
+        <td>Very good</td>
+    </tr>
+    <tr>
+        <td>Vw passat 2.0</td>
+        <td>Very good</td>
+    </tr>
+</table>
+<hr>
+
+<h1 id="links_buttons" align="center">Topic: Links and Button</h1>
+
+<!-- Simple link -->
+<a href="https://www.google.com.ua/?hl=ru">Simple link(Google)</a>
+
+<!-- Simple link with downloading file-->
+<a href="./img/test_download.txt" download>Download my file</a>
+
+<!-- Simple link witch opening in new tab -->
+
+<a href="https://www.google.com.ua/?hl=ru" target="_blank">Simple link(Google) in new tab</a>
+
+
+<a href="mailto:kirnasuk1284@gmail.com">Lets send an Email</a>
+<a href="skype:test">Lets call on the Skype</a>
+<a href="tel:0970866366">Lets call on the phone</a>
+
+<a href="#up">Go up</a>
+<hr>
+
+<!-- Simple button it has type: submit, button, reset -->
+<button type="button" onclick="myFunction()">Button</button>
+<button type="button" disabled>Button is disabled now</button>
+<button type="button" autofocus>Autofocus button</button>
+
+<h1 id="int_tag" align="center">Topic: Interesting tags</h1>
+
+<!-- Abbreviation -->
+<abbr title="HyperText Markup Language">HTML</abbr>
+<br>
+
+<!-- List of options -->
+<input list="list">
+<datalist id="list">
+    <option value="Front-end"></option>
+    <option value="Back-end"></option>
+    <option value="Full-stuck"></option>
+</datalist>
+<br>
+
+
+<!-- Meter -->
+<meter value="20" max="100" low="40" high="60"></meter>
+<br>
+<!-- Progress bar -->
+<progress value="40" max="100"></progress>
+
+<!-- Noscript tag -->
+<noscript>Please switch on JavaScript in your browser!</noscript>
+<br>
+
+<!-- Marked tag -->
+<mark>Marked</mark>
+
+<canvas id="example" width="200" height="200">
+    <script>
+        const drawing = document.getElementById('example');
+        if(drawing && drawing.getContext){
+            const context = drawing.getContext('2d');
+            context.fillStyle = '#433fb1'
+            context.beginPath();
+            context.arc(100,100,100,0,Math.PI*2,true);
+            context.closePath();
+            context.stroke();
+            context.fill();
+        }
+    </script>
+</canvas>
+<hr>
+
+<h1 id="forms" align="center">Topic: Forms</h1>
+
+<!-- Simple form autocomplete автозаполнение -->
+<form action="server.js" name="simple form" autocomplete="on">
+    <fieldset>
+        <legend>First name of form</legend>
+        <input placeholder="Input smth here..." type="text">
+        <select>
+            <option value="BMW">BMW</option>
+            <option value="AUDI">AUDI</option>
+            <option value="JEEP">JEEP</option>
+        </select>
+
+    </fieldset>
+    <!-- обводка -->
+    <fieldset>
+        <!-- Name of form -->
+        <legend>Super form</legend>
+        <input type="text">
+        <br>
+        <!-- Selection item -->
+        <select>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+            <option value="Full-stack">Full-stack</option>
+        </select>
+        <br>
+        <!-- Text area атрибути: розмір: rows строки, cols колонки; disable readonly, placeholder, maxlength, required -->
+        <textarea  rows="10" cols="45" maxlength="10">
+
+    </textarea>
+        <br>
+        <!-- Submit button -->
+        <input type="submit" name="hi" value="GO">
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <!-- Label + input first type -->
+        <legend>Login form</legend>
+        <label for="username">Username</label>
+        <input  id="username">
+        <br>
+        <!-- Label + input second type -->
+        <label>Password
+            <input type="password">
+        </label>
+        <br>
+        <!-- Select -->
+        <select>
+            <optgroup label="It">
+                <!-- value for server, function etc -->
+                <option value="C++">C++</option>
+                <!-- selected default value -->
+                <option selected>Java</option>
+                <!-- can be disable -->
+                <option disabled>C#</option>
+            </optgroup>
+            <optgroup label="Cars">
+                <option>Bmw</option>
+                <option>Toyota</option>
+                <option>Vw</option>
+            </optgroup>
+        </select>
+    </fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+<footer id="down">
+    This footer is so f*cking crazy... :)
+    <a id="btn_up" href="#up">Up</a>
+</footer>
+<!-- External scripts files, скрипти підключати в кінці файла -->
+<script src="main.js"></script>
+
+<!-- Local scripts -->
+<script>
+    console.log('This message from local script')
+</script>
+</body>
+</html>

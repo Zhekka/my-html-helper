@@ -1,0 +1,32 @@
+header{
+    margin: 20px;
+    background: gold;
+}
+nav{
+    margin: 20px;
+    background: pink;
+}
+
+main{
+    margin: 20px;
+    background: greenyellow;
+}
+section{
+    margin: 20px;
+    background: blueviolet;
+}
+article{
+    margin: 20px;
+    padding: 10px;
+    background: red;
+}
+aside{
+    margin: 20px;
+    background: orange;
+}
+
+footer{
+    padding: 20px;
+    margin: 20px;
+    background: brown;
+}
