@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <!--How to add favicon -->
-    <link rel="shortcut icon" href="img/index.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="media/index.ico" type="image/x-icon">
 
     <!-- SEO name-назва котента content що описує сам контент -->
     <meta name="keywords" content="html, web, test">
@@ -39,6 +39,9 @@
     <a href="#int_tag">IntTags |</a>
     <a href="./pageStruct.html" target="_blank">Struct of page |</a>
     <a href="#forms">Forms |</a>
+    <a href="./type_of_input.html" target="_blank">Input |</a>
+    <a href="./medi.html" target="_blank">Media |</a>
+    <a href="#attributes">Global attributes |</a>
 
 
     <a id="btn_down" href="#down">Down</a>
@@ -218,23 +221,23 @@
 <hr>
 <h1 id="images" align="center">Topic: Images(img, picture, source, figure, figcaption tags)</h1>
 
-<!-- Simple image, alt when img is not found -->
-<img class="image" src="img/image.jpg" alt="Error">
+<!-- Simple image, alt when media is not found -->
+<img class="image" src="media/image.jpg" alt="Error">
 <hr>
 
 <!-- Responsive image -->
 <picture>
-    <source media="(min-width: 1024px) " srcset="img/big-car.jpg">
-    <source media="(min-width: 768px)" srcset="img/medium-car.jpeg">
-    <source media="(min-width: 360px)" srcset="img/small-car.jpg">
-    <img src="img/main-car.png" alt="Here must be a car :(">
+    <source media="(min-width: 1024px) " srcset="media/big-car.jpg">
+    <source media="(min-width: 768px)" srcset="media/medium-car.jpeg">
+    <source media="(min-width: 360px)" srcset="media/small-car.jpg">
+    <img src="media/main-car.png" alt="Here must be a car :(">
 
 </picture>
 <hr>
 
 <!-- Image with semantic description -->
 <figure>
-    <img src="img/medium-car.jpeg" alt="Camry is broken">
+    <img src="media/medium-car.jpeg" alt="Camry is broken">
     <figcaption>Toyota Camry 3.5</figcaption>
 </figure>
 
@@ -283,7 +286,7 @@
 <a href="https://www.google.com.ua/?hl=ru">Simple link(Google)</a>
 
 <!-- Simple link with downloading file-->
-<a href="./img/test_download.txt" download>Download my file</a>
+<a href="media/test_download.txt" download>Download my file</a>
 
 <!-- Simple link witch opening in new tab -->
 
@@ -414,9 +417,28 @@
         </select>
     </fieldset>
 </form>
+<hr>
 
+<h1 id="attributes" align="center">Topic: Global attributes</h1>
 
+<!-- Id only one унікальний наприклад для js -->
+<h1 id="head">Text</h1>
+<hr>
+<!-- Class css багаторазовий -->
+<p class="text">Text 2</p>
 
+<h2 title="4">2+2</h2>
+
+<h2 style="color: aqua">CSS</h2>
+
+<h2 contenteditable="true">Click here to edit this text</h2>
+
+<!-- check syntax error -->
+<textarea spellcheck="true">
+    Hu kjdwbqkd
+</textarea>
+
+<h2 dir="rtl"> Hi! I am from Dubai!</h2>
 
 
 

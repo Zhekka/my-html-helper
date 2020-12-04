@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="media/index.ico" type="image/x-icon">
+
+    <title>Input</title>
+</head>
+<body>
+
+<input type="text" placeholder="Enter text...">
+<hr>
+<!-- Input type number with step 10 and min value 0 max 1000000 -->
+<input type="number" placeholder="Enter number..." step="10" min="0" max="10000000">
+<hr>
+<!-- Input type password -->
+<input type="password" placeholder="Enter password here...">
+<hr>
+<input type="range">
+<hr>
+<input type="date">
+<hr>
+<input type="color">
+<hr>
+<input type="reset" value="resettt">
+<hr>
+
+<!-- List of options -->
+<input type="text" list="list" placeholder="You can choose one of order">
+<datalist id="list">
+    <option value="First order"></option>
+    <option value="Second order"></option>
+    <option value="Third order"></option>
+</datalist>
+
+<input type="email" placeholder="Enter your email...">
+<input type="url" placeholder="Enter your url...">
+
+<input type="image" src="media/small-car.jpg" alt="Just an image">
+
+<!-- For telephone number -->
+<input type="tel" placeholder="Enter your phone number here">
+<hr>
+<input type="search" placeholder="Search">
+<input type="datetime-local">
+<input type="month">
+<input type="time">
+<input type="week">
+<hr>
+<!-- file for uploading your file multiple - для загрузки декількох файлів -->
+<input type="file">
+<hr>
+<!-- Checkbox -->
+<label>
+<input type="checkbox" value="option1" checked>
+    Bmw
+</label>
+<br>
+<label>
+    <input type="checkbox" value="option2">
+    Audi
+</label>
+<br>
+<label>
+    <input type="checkbox" value="option3">
+    Fiat
+</label>
+<hr>
+
+<!-- Radio name must be equals -->
+<label>
+    <input type="radio" name="value" value="option1" >
+    Toyota
+    <br>
+</label>
+<label>
+    <input type="radio" name="value" value="option2"checked>
+    Lexus
+    <br>
+</label>
+<label>
+    <input type="radio" name="value" value="option3">
+    Ferrari
+</label>
+<hr>
+
+
+</body>
+</html>
